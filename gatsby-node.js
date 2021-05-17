@@ -1,18 +1,38 @@
 const path = require('path');
-const { clearHtml } = require('./builder/markdown-helpers');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
+      site {
+        siteMetadata {
+          title
+          description
+          url
+          keywords
+          author
+        }
+      }
       allMarkdownRemark {
         edges {
           node {
             html
             frontmatter {
               slug
-              title
               date
+              title
+              description
+              keywords
+              author
+              image: featured {
+                childImageSharp {
+                  resize(width: 1200) {
+                    src
+                    height
+                    width
+                  }
+                }
+              }
             }
           }
         }
@@ -20,23 +40,24 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const {
-      html: dirtyHtml,
-      frontmatter: { slug, title, date },
-    } = node;
+  const siteMetadata = result.data.site.siteMetadata;
 
-    // const html = clearHtml(dirtyHtml);
-    const html = dirtyHtml;
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const { html, frontmatter } = node;
+    const markdownMetadata = {
+      ...frontmatter,
+      image: frontmatter.image
+        ? frontmatter.image.childImageSharp.resize
+        : null,
+    };
 
     createPage({
-      path: slug,
+      path: markdownMetadata.slug,
       component: path.resolve(`./src/templates/index-template.tsx`),
       context: {
-        slug,
-        title,
-        date,
         html,
+        siteMetadata,
+        markdownMetadata,
       },
     });
   });

@@ -1,22 +1,25 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { MarkdownMetadata, SiteMetadata } from '../models/seo-models';
 
 interface IndexPageProps extends PageProps {
   pageContext: {
     html: string;
-    date: string;
-    slug: string;
-    title: string;
+    siteMetadata: SiteMetadata;
+    markdownMetadata: MarkdownMetadata;
   };
 }
 
 const IndexTemplate = (props: IndexPageProps) => {
-  console.log(props.pageContext);
+  const { html, siteMetadata, markdownMetadata } = props.pageContext;
+  const seoProps = { siteMetadata, ...markdownMetadata };
   return (
-    <div>
-      <h1>Mini</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.pageContext.html }} />
-    </div>
+    <Layout>
+      <SEO {...seoProps} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
   );
 };
 

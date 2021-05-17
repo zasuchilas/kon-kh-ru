@@ -1,0 +1,54 @@
+:root {
+  --font-alegreya: 'Alegreya Sans SC', sans-serif;
+
+  /* colors */
+  --lightslategray: lightslategray;
+  --red: red;
+  --white: white;
+  --grey-fc: #fcfcfc;
+  --grey-dd: #dddddd;
+  --grey-f4: #f4f4f4;
+  --cornflowerblue: cornflowerblue;
+  --cadetblue: cadetblue;
+  --black: #333;
+  --grey-22: #222222;
+  --grey-44: #444444;
+  --gold: gold;
+  --lemonchiffon: lemonchiffon;
+  --lemonchiffon-light: rgba(255, 250, 205, 0.3);
+  --snow: snow;
+  --snow-light: rgba(255, 250, 250, 0.5);
+  --gray-3: #828282;
+  --brown: brown;
+  --tomato: tomato;
+
+  /* theme */
+  --primary-color: var(--black);
+  --secondary-color: var(--white);
+  --accent-color: var(--black);
+  --dark-header: var(--grey-fc);
+  --border: var(--grey-dd);
+  --btn-hover: var(--grey-f4);
+  --link: var(--black);
+  --link-visited: var(--black);
+  --logo-text: var(--white);
+  --logo-bg: var(--black);
+  --yellow-marker: var(--lemonchiffon);
+  --marked-bg: var(--lemonchiffon-light);
+  --corrector: var(--snow-light);
+  --functions: var(--gray-3);
+  --action-btn: var(--functions);
+
+
+  /* alegreya theme */
+  --font-family: var(--font-alegreya);
+  --line-height: 1.1;
+  --line-height-lg: 1.4;
+  --font-size: 17px;
+  --font-size-sm: 17px;
+  --font-size-xs: 14px;
+  --weight-regular: 400;
+  --weight-bold: 500;
+  --weight-black: 900;
+
+}

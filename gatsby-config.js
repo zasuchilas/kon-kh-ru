@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'mini',
+    description: 'Minimalism against',
+    keywords: 'landing, site',
+    url: 'https://kon-kh.ru',
+    author: '@kon-kh',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -32,6 +36,14 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+        },
       },
     },
   ],
