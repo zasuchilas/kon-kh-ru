@@ -94,7 +94,7 @@ const SEO = ({
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={`%s - ${siteMetadata.title}`}
+      titleTemplate={`${siteMetadata.title} - %s`}
       link={
         canonical
           ? [

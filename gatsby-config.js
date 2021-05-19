@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'mini',
-    description: 'Minimalism against',
+    title: 'kon-kh.ru',
+    description: 'Минимализм против лендингов',
     keywords: 'landing, site',
     url: 'https://kon-kh.ru',
     author: '@kon-kh',
@@ -32,7 +32,6 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 650,
-              showCaptions: true,
             },
           },
         ],
