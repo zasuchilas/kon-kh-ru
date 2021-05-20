@@ -1,4 +1,4 @@
-import React, { Fragment, ReactNode } from 'react';
+import React, { Fragment, ReactNode, useEffect } from 'react';
 import Logo from './logo';
 
 type LayoutProps = {
@@ -8,6 +8,18 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   const scrollToLeft = () => {};
   const scrollToRight = () => {};
+
+  const setRoot = () => {
+    if (+document.documentElement.clientHeight >= 512) {
+      const fontSize = `${+document.documentElement.clientWidth * 0.046}px`;
+      document.documentElement.style.setProperty('--font-size-sm', fontSize);
+    }
+    console.log('2', +document.documentElement.clientHeight);
+  };
+
+  useEffect(() => {
+    setRoot();
+  }, []);
 
   return (
     <Fragment>
