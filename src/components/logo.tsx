@@ -7,19 +7,24 @@ const Logo = () => {
   return (
     <div className="logo mb-2">
       <div>
-        <span className="build-date">Build date</span>
-        <span className="build-time">Build time</span>
+        <span className="build-time">
+          Konstantin Kh. - web-приложения/сайты
+        </span>
       </div>
       <Link to="/" className="logo-link">
         <LogoFlat />
       </Link>
-      <div className="comment-block mt-sm">
-        <div>
-          <div>Сводный календарь событий Roster.one</div>
-          <div>eventCountText</div>
-          <div>Обратная связь: telegram</div>
-        </div>
-      </div>
+      <ul className="contact-list mt-sm">
+        <li>
+          <a href="tel:+79092800018">+7 909 280 00 18</a>
+        </li>
+        <li>
+          <a href="tg://resolve?domain=kon_kh">telegram@kon_kh</a>
+        </li>
+        <li>
+          <a href="mailto:kon-kh@mail.ru">kon-kh@mail.ru</a>
+        </li>
+      </ul>
     </div>
   );
 };

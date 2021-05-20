@@ -79,3 +79,18 @@ a:hover {
   font-size: var(--font-size-xs) !important;
   line-height: var(--line-height-lg);
 }
+
+.contact-list {
+  font-size: var(--font-size-xs);
+  font-style: italic;
+  font-weight: var(--weight-regular);
+
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+
+  & li {
+    font-size: var(--font-size-xs) !important;
+    margin: 0.5rem 0;
+  }
+}

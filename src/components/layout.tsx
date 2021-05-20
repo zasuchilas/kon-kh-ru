@@ -1,20 +1,33 @@
-import React, { Fragment, ReactNode, useEffect } from 'react';
+import React, { Fragment, ReactNode, useEffect, useRef } from 'react';
 import Logo from './logo';
+
+const SCROLL_OFFSET = 512;
 
 type LayoutProps = {
   children: ReactNode;
 };
 
 const Layout = ({ children }: LayoutProps) => {
-  const scrollToLeft = () => {};
-  const scrollToRight = () => {};
+  const layoutRef = useRef<HTMLDivElement>(null);
+
+  const scrollToLeft = () => {
+    if (!layoutRef || !layoutRef.current) {
+      return;
+    }
+    layoutRef.current.scrollLeft -= SCROLL_OFFSET;
+  };
+  const scrollToRight = () => {
+    if (!layoutRef || !layoutRef.current) {
+      return;
+    }
+    layoutRef.current.scrollLeft += SCROLL_OFFSET;
+  };
 
   const setRoot = () => {
     if (+document.documentElement.clientHeight >= 512) {
       const fontSize = `${+document.documentElement.clientWidth * 0.046}px`;
       document.documentElement.style.setProperty('--font-size-sm', fontSize);
     }
-    console.log('2', +document.documentElement.clientHeight);
   };
 
   useEffect(() => {
@@ -24,18 +37,18 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <Fragment>
       <button className="btn scroll-btn to-left" onClick={scrollToLeft}>
-        ≪ Влево
+        ⋘
       </button>
       <button className="btn scroll-btn to-right" onClick={scrollToRight}>
-        Вправо ≫
+        ⋙
       </button>
 
-      <div className="layout">
+      <div className="layout" ref={layoutRef}>
         <header>
           <Logo />
         </header>
         <div className="article">{children}</div>
-        <footer className="footer">site.name</footer>
+        <footer className="footer">kon-kh.ru</footer>
       </div>
     </Fragment>
   );

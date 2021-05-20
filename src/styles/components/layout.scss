@@ -81,16 +81,20 @@
   .scroll-btn {
     display: inline-block;
     position: absolute;
-    bottom: 18px;
     z-index: 10;
+    bottom: 2px;
+    padding: 1px 8px;
+    border-radius: 8px;
+    font-size: 18px;
   }
 
   .scroll-btn.to-left {
-    left: 10px;
+    left: 2px;
   }
 
   .scroll-btn.to-right {
-    right: 10px;
+    right: 2px;
+    margin-right: -2px;
   }
 
   .roster-row {
