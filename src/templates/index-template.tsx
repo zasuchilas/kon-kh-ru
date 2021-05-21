@@ -18,7 +18,10 @@ const IndexTemplate = (props: IndexPageProps) => {
   return (
     <Layout>
       <SEO {...seoProps} />
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div
+        className="markdown-block"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </Layout>
   );
 };
