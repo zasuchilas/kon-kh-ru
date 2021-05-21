@@ -33,7 +33,7 @@
 }
 
 .article {
-  max-width: 280px;
+  //max-width: 280px;
 }
 
 @media screen and (min-width: 512px) and (min-height: 512px) {
@@ -60,6 +60,7 @@
   }
 
   .layout .article {
+    max-width: 280px;
     column-width: 280px;
     column-fill: auto;
     column-gap: 1.2rem;
@@ -159,15 +160,17 @@ h1 + p {
 h2 {
   page-break-inside: avoid;
   break-inside: avoid;
+  break-after: avoid !important;
   font-size: 1.2rem;
   font-weight: var(--weight-bold);
   margin-top: 1rem;
 }
 
-//h2 + p {
-//  page-break-inside: avoid;
-//  break-inside: avoid;
-//}
+h2 + p {
+  break-before: avoid !important;
+  //page-break-inside: avoid;
+  //break-inside: avoid;
+}
 
 p strong {
   font-weight: var(--weight-bold);
