@@ -44,11 +44,13 @@ const Layout = ({ children }: LayoutProps) => {
       </button>
 
       <div className="layout" ref={layoutRef}>
-        <header>
-          <Logo />
-        </header>
-        <div className="article">{children}</div>
-        <footer className="footer">kon-kh.ru</footer>
+        <div className="article">
+          <header>
+            <Logo />
+          </header>
+          {children}
+          <footer className="footer">kon-kh.ru</footer>
+        </div>
       </div>
     </Fragment>
   );

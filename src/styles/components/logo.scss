@@ -1,41 +1,42 @@
 .logo {
-  /*margin-bottom: 0.3rem;*/
-  svg {
+
+  & svg {
     max-width: 225px;
     max-height: 70px;
   }
-}
 
-.logo .logo-link {
-  text-decoration: none;
-  display: inline-block;
-  margin: 0.8rem 0;
-}
+  & .logo-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.8rem 0;
+  }
 
-.logo .logo-link:hover {
-  background: none;
-}
+  & .logo-link:hover {
+    background: none;
+  }
 
-/*.logo .logo-link h3 {*/
-/*  margin: 0;*/
-/*}*/
+  & .build-time {
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+  }
 
-/*.logo .logo-link:hover {*/
-/*  color: red;*/
-/*  background-color: transparent;*/
-/*}*/
+  & .contact-list {
+    font-size: var(--font-size-xs);
+    font-style: italic;
+    font-weight: var(--weight-regular);
 
-/*.logo .logo-desc {*/
-/*  font-style: italic;*/
-/*}*/
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0 0 2rem;
 
-.logo .build-date {
-  font-size: var(--font-size);
-  font-weight: 500;
-  margin-right: 0.3rem;
-}
+    & li {
+      font-size: var(--font-size-xs) !important;
+      margin: 0.5rem 0;
 
-.logo .build-time {
-  font-size: var(--font-size-xs);
-  font-weight: 500;
+      & a {
+        text-decoration: none;
+        color: var(--black);
+      }
+    }
+  }
 }

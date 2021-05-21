@@ -1,5 +1,5 @@
 .layout {
-  padding: 1rem;
+  padding: 1rem 0.6rem;
   /*min-height: 100vh;*/
   background-color: var(--white);
 
@@ -44,24 +44,29 @@
     overflow-x: scroll;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    border-left: none;
+    border-right: none;
+    border-right: 1px solid rgba(255, 255, 255, 0);
   }
 
   .layout header {
-    min-width: 270px;
-    max-width: 270px;
-    border-right: 1px dashed var(--border);
-    /*margin-right: 1.5rem;*/
-    padding-right: 1rem;
-    margin-bottom: 0;
+    //min-width: 270px;
+    //max-width: 270px;
+    //border-right: 1px dashed var(--border);
+    ///*margin-right: 1.5rem;*/
+    //padding-right: 1rem;
+    //margin-bottom: 1rem;
   }
 
   .layout .article {
     column-width: 280px;
     column-fill: auto;
-    column-gap: 3rem;
+    column-gap: 1.2rem;
     column-rule: 1px dashed var(--border);
     border-right: none;
-    padding: 0 1rem;
+    //padding: 0 1rem;
+    //padding: 0 1rem 0 0;
   }
 
   .layout .article-header {
@@ -70,16 +75,18 @@
     padding: 0.5rem 0 1rem;
   }
 
-  ul.roster-row-block {
-    padding-right: 1rem;
-  }
+  //ul.roster-row-block {
+  //  padding-right: 1rem;
+  //}
 
   //.markdown-block {
-  //  padding-right: 1rem;
+  //  padding: 0 1rem;
   //}
 
   .layout footer {
     display: none;
+    //min-height: 100vh;
+    //border-top: none;
   }
 
   .scroll-btn {
@@ -138,6 +145,7 @@ p {
 p .gatsby-resp-image-wrapper {
   page-break-inside: avoid;
   break-inside: avoid;
+  margin-right: 0.75rem !important;
 }
 
 h1 + p {
@@ -151,7 +159,7 @@ h1 + p {
 h2 {
   page-break-inside: avoid;
   break-inside: avoid;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: var(--weight-bold);
   margin-top: 1rem;
 }

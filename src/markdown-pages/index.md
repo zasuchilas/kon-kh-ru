@@ -99,6 +99,6 @@ featured: "../images/annie-spratt-8mqOw4DBBSg-unsplash.jpeg"
 
 Дополнительные/нестандартные работы согласовываются и оплачиваются сверх фиксированной суммы.
 
-Если у вас есть идеи/задумки сервиса/приложения, то можно обсудить это отдельно. Для реализации таких проектов может быть взят прогрессивный фреймворк <a target="_blank" href="https://ru.svelte.dev/">Svelte</a>.
-
 ![Photo by Annie Spratt on Unsplash](../images/annie-spratt-8mqOw4DBBSg-unsplash.jpeg)
+
+Если у вас есть идеи/задумки сервиса/приложения, то можно обсудить это отдельно. Для реализации таких проектов может быть взят прогрессивный фреймворк <a target="_blank" href="https://ru.svelte.dev/">Svelte</a>.
