@@ -26,11 +26,6 @@ const Logo = () => {
             WhatsApp@79092800018
           </a>
         </li>
-        {/*<li>*/}
-        {/*  <a href="viber://chat?number=79092800018" rel="nofollow">*/}
-        {/*    Viber*/}
-        {/*  </a>*/}
-        {/*</li>*/}
         <li>
           <a target="_blank" href="https://viber.click/79092800018">
             Viber@79092800018
