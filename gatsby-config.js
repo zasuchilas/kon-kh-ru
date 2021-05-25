@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'kon-kh.ru',
-    description: 'Минимализм против лендингов',
-    keywords: 'landing, site',
+    title: 'Konstantin Kh.',
+    description: 'Бумажные сайты',
+    keywords: 'landing, лендинг, site, сайт, создание, разработка, улучшение',
     url: 'https://kon-kh.ru',
     author: '@kon-kh',
   },
