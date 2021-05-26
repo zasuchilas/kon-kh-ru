@@ -33,6 +33,8 @@ module.exports = {
             options: {
               maxWidth: 650,
               linkImagesToOriginal: true,
+              showCaptions: true,
+              markdownCaptions: true,
             },
           },
         ],

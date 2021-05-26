@@ -5,8 +5,10 @@ title: "Бумажные сайты/web-приложения"
 description: "Доведите понятность вашего бизнеса/сайта в интернете до 100%."
 keywords: "web, приложения, сайты, бумажные, типографика"
 author: "@kon-kh"
-featured: "../images/annie-spratt-8mqOw4DBBSg-unsplash.jpeg"
+featured: "../images/jon-tyson-H1flXzFuXgo-unsplash.jpeg"
 ---
+
+![Photo by Jon Tyson on Unsplash](../images/jon-tyson-H1flXzFuXgo-unsplash.jpeg)
 
 # Бумажные сайты
 Доведите понятность вашего бизнеса/сайта в интернете до 100%.
@@ -111,8 +113,6 @@ featured: "../images/annie-spratt-8mqOw4DBBSg-unsplash.jpeg"
 Сроки реализации минимальные - 2-3 дня или быстрее.
 
 Дополнительные/нестандартные работы согласовываются и оплачиваются сверх фиксированной суммы.
-
-![Photo by Annie Spratt on Unsplash](../images/annie-spratt-8mqOw4DBBSg-unsplash.jpeg)
 
 Если у вас есть идеи/задумки сервиса/приложения, то можно обсудить это отдельно. Для реализации таких проектов может быть взят прогрессивный фреймворк <a target="_blank" href="https://ru.svelte.dev/">Svelte</a>.
 
