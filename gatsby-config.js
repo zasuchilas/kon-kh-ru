@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Konstantin Kh.',
+    title: 'Konstantin Khitrov',
     description: 'Бумажные сайты',
     keywords: 'landing, лендинг, site, сайт, создание, разработка, улучшение',
     url: 'https://kon-kh.ru',

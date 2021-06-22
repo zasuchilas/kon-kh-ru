@@ -87,6 +87,16 @@ const Layout = ({ children, short }: LayoutProps) => {
             </a>
           </li>
           <li>
+            Photo by{' '}
+            <a href="https://unsplash.com/@eyefish73?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Jon Sailer
+            </a>{' '}
+            on{' '}
+            <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </li>
+          <li>
             Icons made by{' '}
             <a href="https://www.freepik.com" title="Freepik">
               <small>Freepik</small>

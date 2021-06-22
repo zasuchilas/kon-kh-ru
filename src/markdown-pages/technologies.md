@@ -2,11 +2,11 @@
 slug: "/technologies"
 template: "page"
 date: "2019-06-21"
-title: "Бумажные сайты - Технологии и преимущества"
+title: "Бумажные сайты - технологии и преимущества"
 description: "Какие технологии мы используем для создания и размещения сайтов"
 keywords: "web, приложения, сайты, бумажные, типографика"
 author: "@kon-kh"
-featured: "../images/jon-tyson-H1flXzFuXgo-unsplash.jpeg"
+featured: "../images/nsrSyI-JUYg.jpeg"
 ---
 
 ![Технологии неотличимы от магии](../images/nsrSyI-JUYg.jpeg)

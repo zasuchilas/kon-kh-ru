@@ -11,6 +11,10 @@
   & h2 {
     margin: 0.4rem 0;
   }
+
+  & h3 {
+    margin: 0.4rem 0;
+  }
 }
 
 #theses {
@@ -93,7 +97,7 @@
     padding: 1rem 0;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 1.1fr 0.7fr;
     grid-template-rows: auto auto;
     grid-template-areas:
             "theses main-article article-4"
