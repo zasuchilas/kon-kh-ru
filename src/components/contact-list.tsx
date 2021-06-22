@@ -21,6 +21,8 @@ import Viber from '../images/viber.svg';
 import Skype from '../images/skype.svg';
 // @ts-ignore
 import Messenger from '../images/messenger.svg';
+// @ts-ignore
+import Write from '../images/notebook.svg';
 
 const ContactList = () => {
   return (
@@ -30,6 +32,16 @@ const ContactList = () => {
           <a href="tel:+74951281801" className="ext-link">
             +7 (495) 128-18-01
             <ExtLink />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://forms.amocrm.ru/zxwvtw"
+            className="icon-link"
+            title="Написать с сайта"
+          >
+            <Write />
           </a>
         </li>
         <li>
