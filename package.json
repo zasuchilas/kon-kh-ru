@@ -1,6 +1,6 @@
 {
   "name": "kon-kh.ru",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "private": true,
   "description": "Msk project $$$",
   "author": "kon-kh",
@@ -19,6 +19,7 @@
     "@types/react-dom": "^17.0.5",
     "@types/react-helmet": "^6.1.1",
     "gatsby": "^3.4.1",
+    "gatsby-plugin-catch-links": "^3.6.0",
     "gatsby-plugin-manifest": "^3.5.0",
     "gatsby-plugin-react-helmet": "^4.5.0",
     "gatsby-plugin-react-svg": "^3.0.1",

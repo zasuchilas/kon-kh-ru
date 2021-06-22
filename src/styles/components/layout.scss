@@ -1,3 +1,104 @@
+#layout {
+  //display: grid;
+  //grid-template-areas:
+  //        "header"
+  //        "main"
+  //        "footer";
+  //grid-template-columns: 1fr;
+  //grid-template-rows: auto auto auto;
+  margin: 1rem;
+
+  &.short {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #layout {
+    max-width: 1200px;
+    margin: 1rem auto;
+  }
+}
+
+header {
+  grid-area: header;
+  border-bottom: 1px solid var(--border);
+  //margin-bottom: 1rem;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+
+  & .footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  & * {
+    font-size: 0.8rem !important;
+  }
+
+  //& .attribution {
+  //  fon
+  //}
+}
+
+#logo {
+  grid-area: logo;
+}
+
+.markdown-block {
+  display: grid;
+  grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "top-area top-area top-area technology-article"
+    "top-area top-area top-area price-article"
+    "principe-article principe-article principe-article price-article";
+  grid-gap: 0.7rem;
+}
+
+#top-article {
+  grid-area: top-area;
+  column-count: 3;
+}
+
+#idea-article {
+  grid-area: idea-article;
+  display: none;
+}
+
+#difference-article {
+  grid-area: difference-article;
+}
+
+#principe-article {
+  grid-area: principe-article;
+}
+
+#technology-article {
+  grid-area: technology-article;
+}
+
+#price-article {
+  grid-area: price-article;
+}
+
+#reasons-article {
+  grid-area: reasons-article;
+  display: none;
+}
+
+
 .layout {
   padding: 1rem 0.6rem 1.3rem;
   background-color: var(--white);
@@ -26,9 +127,9 @@
 @media screen and (min-width: 512px) and (min-height: 512px) {
   .layout {
     display: flex;
-    height: 100vh;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    height: 210vh;
+    //overflow-y: hidden;
+    //overflow-x: scroll;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
@@ -87,12 +188,12 @@
     font-size: 1rem !important;
   }
 
-  .gatsby-resp-image-figure {
-    margin-right: 0.75rem !important;
-    max-width: none !important;
-  }
+  //.gatsby-resp-image-figure {
+  //  //margin-right: 0.75rem !important;
+  //  max-width: none !important;
+  //}
 
-  .logo .logo-link {
-    margin: 0.8rem 0 !important;
-  }
+  //.logo .logo-link {
+  //  margin: 0.8rem 0 !important;
+  //}
 }

@@ -4,3 +4,6 @@ import './src/styles/font.scss';
 import './src/styles/global.scss';
 import './src/styles/components/layout.scss';
 import './src/styles/components/logo.scss';
+import './src/styles/components/contact-list.scss';
+import './src/styles/pages/index-page.scss';
+import './src/styles/pages/article-page.scss';

@@ -5,13 +5,14 @@
   line-height: var(--line-height);
   font-weight: var(--weight-regular);
   font-size: var(--font-size);
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-@media screen and (max-width: 512px), screen and (max-height: 512px) {
-  *, html, body {
-    font-size: var(--font-size-sm);
-  }
-}
+//@media screen and (max-width: 512px), screen and (max-height: 512px) {
+//  *, html, body {
+//    font-size: var(--font-size-sm);
+//  }
+//}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.5rem;
@@ -52,6 +53,16 @@ h1 {
 a {
   color: var(--link);
   white-space: nowrap;
+
+  &.more {
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 0 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    color: var(--lightslategray);
+    letter-spacing: 1px;
+  }
 }
 
 a:visited {
@@ -93,9 +104,8 @@ p {
 .gatsby-resp-image-figure {
   page-break-inside: avoid;
   break-inside: avoid;
-  margin-right: 0;
-  margin-left: 0;
-  max-width: 60vmin;
+  margin: 0 0 0.5rem;
+  //max-width: 60vmin;
 }
 
 .gatsby-resp-image-figcaption p {
@@ -163,5 +173,11 @@ ul {
     font-size: 0.9rem;
     margin-bottom: 0.2rem;
     margin-right: 0.4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .gatsby-resp-image-figure {
+    max-width: none;
   }
 }

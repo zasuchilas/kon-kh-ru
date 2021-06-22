@@ -3,6 +3,7 @@ import { PageProps } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { MarkdownMetadata, SiteMetadata } from '../models/seo-models';
+import { Link } from 'gatsby';
 
 interface IndexPageProps extends PageProps {
   pageContext: {
@@ -12,15 +13,23 @@ interface IndexPageProps extends PageProps {
   };
 }
 
-const IndexTemplate = (props: IndexPageProps) => {
+const PageTemplate = (props: IndexPageProps) => {
   const { html, siteMetadata, markdownMetadata } = props.pageContext;
   const seoProps = { siteMetadata, ...markdownMetadata };
+  const bread = ` / ${markdownMetadata.title}`;
   return (
-    <Layout>
+    <Layout short={true}>
       <SEO {...seoProps} />
-      <div className="index-page" dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="bread">
+        <Link to="/">kon-kh.ru</Link>
+        {bread}
+      </div>
+      <div
+        className="article-page"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </Layout>
   );
 };
 
-export default IndexTemplate;
+export default PageTemplate;
