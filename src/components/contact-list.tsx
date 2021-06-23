@@ -36,40 +36,24 @@ const ContactList = () => {
         </li>
         <li>
           <a
-            target="_blank"
-            href="https://forms.amocrm.ru/zxwvtw"
+            href="mailto:hello@kon-kh.ru"
             className="icon-link"
-            title="Написать с сайта"
-          >
-            <Write />
-          </a>
-        </li>
-        <li>
-          <a href="tel:+79010501025" className="ext-link">
-            +7 (901) 050-10-25
-            <ExtLink />
-          </a>
-        </li>
-      </ul>
-      <ul className="contact-list-block">
-        <li>
-          <a
-            href="mailto:kon-kh@mail.ru"
-            className="icon-link"
-            title="Email kon-kh@mail.ru"
+            title="Email hello@kon-kh.ru"
           >
             <Email />
           </a>
         </li>
         <li>
           <a
-            href="tg://resolve?domain=kon_kh"
+            href="tg://resolve?domain=kehitrov"
             className="icon-link"
-            title="Telegram @kon_kh"
+            title="Telegram @kehitrov"
           >
             <Telegram />
           </a>
         </li>
+      </ul>
+      <ul className="contact-list-block">
         <li>
           <a
             target="_blank"
@@ -92,19 +76,28 @@ const ContactList = () => {
         </li>
         <li>
           <a
-            href="https://skype:k.e.hitrov?chat"
+            target="_blank"
+            href="https://join.skype.com/invite/NSbuO92l2Jro"
             className="icon-link"
             title="Skype @k.e.hitrov"
           >
             <Skype />
           </a>
+          {/*<a*/}
+          {/*  target="_blank"*/}
+          {/*  href="https://skype:k.e.hitrov?chat"*/}
+          {/*  className="icon-link"*/}
+          {/*  title="Skype @k.e.hitrov"*/}
+          {/*>*/}
+          {/*  <Skype />*/}
+          {/*</a>*/}
         </li>
         <li>
           <a
             target="_blank"
-            href="https://vk.me/kon_kh"
+            href="https://vk.me/k.e.hitrov"
             className="icon-link"
-            title="Вконтакте@kon_kh"
+            title="Вконтакте @k.e.hitrov"
           >
             <Vk />
           </a>
