@@ -14,6 +14,8 @@ export type MarkdownMetadata = {
   keywords: string;
   author?: string;
   image?: Image;
+  template?: string;
+  demo?: string;
 };
 
 export type Meta =

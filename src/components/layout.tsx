@@ -5,9 +5,10 @@ import Attributions from './attributions';
 type LayoutProps = {
   children: ReactNode;
   short?: boolean;
+  demo?: string;
 };
 
-const Layout = ({ children, short }: LayoutProps) => {
+const Layout = ({ children, short, demo }: LayoutProps) => {
   const setRoot = () => {
     if (+document.documentElement.clientHeight >= 512) {
       const fontSize = `${+document.documentElement.clientWidth * 0.046}px`;
@@ -15,7 +16,7 @@ const Layout = ({ children, short }: LayoutProps) => {
     }
   };
 
-  const layoutClasses = short ? 'short' : '';
+  const layoutClasses = [short ? 'short' : '', demo || ''].join(' ');
 
   useEffect(() => {
     setRoot();

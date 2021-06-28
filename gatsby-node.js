@@ -19,6 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
             html
             frontmatter {
               slug
+              demo
               template
               date
               title
@@ -52,13 +53,15 @@ exports.createPages = async ({ graphql, actions }) => {
         : null,
     };
 
+    const { demo, slug, template } = markdownMetadata;
+
     // index | page | blog
-    const component = path.resolve(
-      `./src/templates/${markdownMetadata.template}-template.tsx`,
-    );
+    const component = !demo
+      ? path.resolve(`./src/templates/${template}-template.tsx`)
+      : path.resolve(`./src/templates/demo/${demo}-template.tsx`);
 
     createPage({
-      path: markdownMetadata.slug,
+      path: slug,
       component,
       context: {
         html,
