@@ -68,50 +68,77 @@ const RacePlaceTemplate = (props: DemoPageProps) => {
                 <ul className="contact-list-block">
                   <ContactItem
                     type="tel"
-                    hrefContact="+74951281801"
-                    text="+7 (495) 128-18-01"
+                    hrefBase="tel:"
+                    hrefContact="+74994502665"
+                    textBase=""
+                    textContact="+7 (499) 450-26-65"
+                    view="text"
                   />
                   <ContactItem
                     type="mail"
-                    hrefContact="hello@kon-kh.ru"
-                    text="hello@kon-kh.ru"
+                    hrefBase="mailto:"
+                    hrefContact="mail@race-place.ru"
+                    textBase="Email "
+                    textContact="mail@race-place.ru"
+                    view="black-icon"
                   />
                   <ContactItem
                     type="telegram"
+                    hrefBase="tg://resolve?domain="
                     hrefContact="kehitrov"
-                    text="kehitrov"
+                    textBase="Telegram @"
+                    textContact="kehitrov"
+                    view="black-icon"
                   />
                 </ul>
                 <ul className="contact-list-block">
                   <ContactItem
                     type="whatsapp"
+                    hrefBase="https://wa.me/"
                     hrefContact="79010501025"
-                    text="+7 (901) 050-10-25"
+                    textBase="WhatsApp "
+                    textContact="+7 (901) 050-10-25"
+                    view="black-icon"
                   />
                   <ContactItem
                     type="viber"
+                    hrefBase="https://viber.click/"
                     hrefContact="79010501025"
-                    text="+7 (901) 050-10-25"
+                    textBase="Viber "
+                    textContact="+7 (901) 050-10-25"
+                    view="black-icon"
                   />
                   <ContactItem
                     type="skype"
-                    hrefContact="https://join.skype.com/invite/NSbuO92l2Jro"
-                    text="k.e.hitrov"
+                    hrefBase="https://join.skype.com/invite/"
+                    hrefContact="NSbuO92l2Jro"
+                    textBase="Skype "
+                    textContact="k.e.hitrov"
+                    view="black-icon"
                   />
                   <ContactItem
                     type="vk"
+                    hrefBase="https://vk.me/"
                     hrefContact="k.e.hitrov"
-                    text="k.e.hitrov"
+                    textBase="Вконтакте @"
+                    textContact="k.e.hitrov"
+                    view="black-icon"
                   />
                   <ContactItem
                     type="fb"
+                    hrefBase="https://m.me/"
                     hrefContact="k.e.hitrov"
-                    text="k.e.hitrov"
+                    textBase="Facebook @"
+                    textContact="k.e.hitrov"
+                    view="black-icon"
                   />
                   <ContactItem
                     type="inst"
+                    hrefBase="https://www.instagram.com/"
                     hrefContact="k.e.hitrov"
-                    text="k.e.hitrov"
+                    textBase="Instagram @"
+                    textContact="k.e.hitrov"
+                    view="black-icon"
                   />
                 </ul>
               </div>
