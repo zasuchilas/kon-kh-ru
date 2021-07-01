@@ -1,0 +1,87 @@
+.race-place {
+  & .contact-list {
+    //text-align: center;
+
+    & a.ext-link {
+      font-size: 1.05rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  & .index-page {
+    & #article-4 {
+      background-color: var(--white);
+    }
+  }
+
+  & table {
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    margin-left: -2px;
+    width: 100%;
+  }
+
+  & td {
+    font-size: 0.8rem;
+  }
+
+  & .favicon-block {
+    display: flex;
+    flex-direction: row;
+
+    & svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+  }
+
+  //& #theses iframe {
+  //  margin-top: 0.5rem;
+  //}
+
+  & h3 {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .race-place {
+    & .index-page {
+      grid-template-columns: 1.1fr 1fr 0.7fr 0.7fr;
+      grid-template-areas:
+            "main-article theses article-2 article-4"
+            "main-article theses article-3 article-4";
+    }
+
+    & #article-4 {
+      border-left: 1px solid var(--border);
+    }
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1200px) {
+  .race-place {
+    & .index-page {
+      grid-template-columns: 1.1fr 1fr 0.7fr;
+      grid-template-areas:
+            "main-article theses article-4"
+            "article-2 article-3 article-4";
+    }
+
+    & #article-4 {
+      border-left: 1px solid var(--border);
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 950px) {
+  .race-place {
+    & .index-page {
+      grid-template-areas:
+            "main-article theses"
+            "article-2 article-3"
+            "article-4 article-4";
+    }
+  }
+}

@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet';
 
 // @ts-ignore
 import LogoFlat from '../../images/race-place/logo.svg';
+// @ts-ignore
+import Favicon from '../../images/race-place/favicon.svg';
 import ContactItem from '../../components/contact-item';
 
 interface DemoPageProps extends PageProps {
@@ -55,13 +57,6 @@ const RacePlaceTemplate = (props: DemoPageProps) => {
               <Link to="/" className="logo-link">
                 <LogoFlat />
               </Link>
-              <button
-                type="button"
-                className="contact-btn"
-                onClick={() => setShowContacts(!showContacts)}
-              >
-                Контакты
-              </button>
             </div>
             <div className={row2Classes}>
               <div className="contact-list">
@@ -74,6 +69,8 @@ const RacePlaceTemplate = (props: DemoPageProps) => {
                     textContact="+7 (499) 450-26-65"
                     view="text"
                   />
+                </ul>
+                <ul className="contact-list-block">
                   <ContactItem
                     type="mail"
                     hrefBase="mailto:"
@@ -84,65 +81,49 @@ const RacePlaceTemplate = (props: DemoPageProps) => {
                   />
                   <ContactItem
                     type="telegram"
-                    hrefBase="tg://resolve?domain="
-                    hrefContact="kehitrov"
-                    textBase="Telegram @"
-                    textContact="kehitrov"
-                    view="black-icon"
-                  />
-                </ul>
-                <ul className="contact-list-block">
-                  <ContactItem
-                    type="whatsapp"
-                    hrefBase="https://wa.me/"
-                    hrefContact="79010501025"
-                    textBase="WhatsApp "
-                    textContact="+7 (901) 050-10-25"
-                    view="black-icon"
-                  />
-                  <ContactItem
-                    type="viber"
-                    hrefBase="https://viber.click/"
-                    hrefContact="79010501025"
-                    textBase="Viber "
-                    textContact="+7 (901) 050-10-25"
-                    view="black-icon"
-                  />
-                  <ContactItem
-                    type="skype"
-                    hrefBase="https://join.skype.com/invite/"
-                    hrefContact="NSbuO92l2Jro"
-                    textBase="Skype "
-                    textContact="k.e.hitrov"
-                    view="black-icon"
-                  />
-                  <ContactItem
-                    type="vk"
-                    hrefBase="https://vk.me/"
-                    hrefContact="k.e.hitrov"
-                    textBase="Вконтакте @"
-                    textContact="k.e.hitrov"
-                    view="black-icon"
-                  />
-                  <ContactItem
-                    type="fb"
-                    hrefBase="https://m.me/"
-                    hrefContact="k.e.hitrov"
-                    textBase="Facebook @"
-                    textContact="k.e.hitrov"
+                    hrefBase=""
+                    hrefContact="https://teleg.one/raceplacekarting"
+                    textBase=""
+                    textContact="Telegram"
                     view="black-icon"
                   />
                   <ContactItem
                     type="inst"
-                    hrefBase="https://www.instagram.com/"
-                    hrefContact="k.e.hitrov"
-                    textBase="Instagram @"
-                    textContact="k.e.hitrov"
+                    hrefBase=""
+                    hrefContact="https://instagram.com/raceplacekarting?igshid=1fpy0blk6gkjp"
+                    textBase=""
+                    textContact="Instagram"
                     view="black-icon"
+                    target="blank"
+                  />
+                  <ContactItem
+                    type="vk"
+                    hrefBase=""
+                    hrefContact="https://vk.com/raceplacekarting"
+                    textBase=""
+                    textContact="Вконтакте"
+                    view="black-icon"
+                    target="blank"
+                  />
+                  <ContactItem
+                    type="fb"
+                    hrefBase=""
+                    hrefContact="https://m.facebook.com/raceplacekarting/"
+                    textBase=""
+                    textContact="Facebook"
+                    view="black-icon"
+                    target="blank"
                   />
                 </ul>
               </div>
             </div>
+            <button
+              type="button"
+              className="contact-btn"
+              onClick={() => setShowContacts(!showContacts)}
+            >
+              Контакты
+            </button>
           </div>
         </header>
       )}
@@ -152,8 +133,15 @@ const RacePlaceTemplate = (props: DemoPageProps) => {
       </main>
       <footer>
         <div className="footer-row">
-          <div className="bold">1234</div>
-          <div className="bold">{site}</div>
+          <div>
+            <div className="bold">Картинг-Центр RacePlace</div>
+            <div>#здесьживутгонки</div>
+            <div>#raceplacekarting</div>
+          </div>
+          <div className="favicon-block">
+            <Favicon />
+            <div className="bold">{site}</div>
+          </div>
         </div>
       </footer>
     </div>

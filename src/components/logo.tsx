@@ -14,17 +14,17 @@ const Logo = () => {
         <Link to="/" className="logo-link">
           <LogoFlat />
         </Link>
-        <button
-          type="button"
-          className="contact-btn"
-          onClick={() => setShowContacts(!showContacts)}
-        >
-          Контакты
-        </button>
       </div>
       <div className={row2Classes}>
         <ContactList />
       </div>
+      <button
+        type="button"
+        className="contact-btn"
+        onClick={() => setShowContacts(!showContacts)}
+      >
+        Контакты
+      </button>
     </div>
   );
 };

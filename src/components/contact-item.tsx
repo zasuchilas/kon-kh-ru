@@ -81,6 +81,7 @@ type ContactItemProp =
       textBase: '';
       textContact: string;
       view: 'text';
+      target?: 'blank';
     }
   | {
       type: 'mail';
@@ -89,6 +90,7 @@ type ContactItemProp =
       textBase: 'Email ' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'telegram';
@@ -97,6 +99,7 @@ type ContactItemProp =
       textBase: 'Telegram @' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'whatsapp';
@@ -105,6 +108,7 @@ type ContactItemProp =
       textBase: 'WhatsApp ' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'viber';
@@ -113,6 +117,7 @@ type ContactItemProp =
       textBase: 'Viber ' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'skype';
@@ -121,6 +126,7 @@ type ContactItemProp =
       textBase: 'Skype ' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'vk';
@@ -129,6 +135,7 @@ type ContactItemProp =
       textBase: 'Вконтакте @' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'fb';
@@ -137,6 +144,7 @@ type ContactItemProp =
       textBase: 'Facebook @' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'inst';
@@ -145,6 +153,7 @@ type ContactItemProp =
       textBase: 'Instagram @' | '';
       textContact: string;
       view: 'text' | 'color-icon' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'twitter';
@@ -153,6 +162,7 @@ type ContactItemProp =
       textBase: 'Twitter @' | '';
       textContact: string;
       view: 'text' | 'black-icon';
+      target?: 'blank';
     }
   | {
       type: 'youtube';
@@ -161,6 +171,7 @@ type ContactItemProp =
       textBase: 'Youtube ' | '';
       textContact: string;
       view: 'text' | 'black-icon';
+      target?: 'blank';
     };
 
 function getHref({ hrefBase, hrefContact }: ContactItemProp): string {
@@ -175,11 +186,19 @@ const ContactItem = (props: ContactItemProp) => {
   const href = getHref(props);
   const text = getText(props);
   const className = props.view === 'text' ? 'ext-link' : 'icon-link';
+
+  // Важно !
+  // 1) для всех внешних ссылок с _blank добавлять noopener чтобы закрыть доступ и возможность фишинга
+  // 2) для всех ссылок контактов добавить nofollow чтобы поисковые роботы не шли по этим ссылкам
+  const targetAttr =
+    props.target === 'blank'
+      ? { target: '_blank', rel: 'noopener nofollow' }
+      : { rel: 'nofollow' };
   switch (props.type) {
     case 'tel':
       return (
         <li>
-          <a href={href} className="ext-link">
+          <a href={href} className="ext-link" {...targetAttr}>
             {text}
             <ExtLink />
           </a>
@@ -188,7 +207,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'mail':
       return (
         <li>
-          <a href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Email'
             ) : props.view === 'color-icon' ? (
@@ -202,7 +221,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'telegram':
       return (
         <li>
-          <a href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Telegram'
             ) : props.view === 'color-icon' ? (
@@ -216,7 +235,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'whatsapp':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'WhatsApp'
             ) : props.view === 'color-icon' ? (
@@ -230,7 +249,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'viber':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Viber'
             ) : props.view === 'color-icon' ? (
@@ -244,7 +263,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'skype':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Skype'
             ) : props.view === 'color-icon' ? (
@@ -258,7 +277,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'vk':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Вконтакте'
             ) : props.view === 'color-icon' ? (
@@ -272,7 +291,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'fb':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Facebook'
             ) : props.view === 'color-icon' ? (
@@ -286,7 +305,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'inst':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? (
               'Instagram'
             ) : props.view === 'color-icon' ? (
@@ -300,7 +319,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'twitter':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? 'Twitter' : <TwitterBlack />}
           </a>
         </li>
@@ -308,7 +327,7 @@ const ContactItem = (props: ContactItemProp) => {
     case 'youtube':
       return (
         <li>
-          <a target="_blank" href={href} className={className} title={text}>
+          <a href={href} className={className} title={text} {...targetAttr}>
             {props.view === 'text' ? 'Youtube' : <YoutubeBlack />}
           </a>
         </li>

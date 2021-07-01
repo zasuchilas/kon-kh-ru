@@ -25,13 +25,16 @@
 }
 
 .contact-btn {
-  transform: rotate(-90deg);
-  font-size: 0.8rem;
+  //transform: rotate(-90deg);
+  font-size: 0.7rem;
   letter-spacing: 1px;
   padding: 0.05rem;
-  margin-right: -1.4rem;
+  margin-bottom: -1rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   font-weight: var(--weight-bold);
+  background-color: var(--btn-hover);
+  border: none;
 }
 
 .logo-row-1 {
