@@ -3,11 +3,11 @@ slug: "/demo/race-place"
 demo: "race-place"
 template: "index"
 date: "2019-06-28"
-title: "DEMO Крытый картинг-центр RacePlace на kon-kh.ru"
+title: "RacePlace DEMO на kon-kh.ru"
 description: "Современный крытый картинг-центр на севере Москвы всего в 5 км от МКАД"
 keywords: ""
 author: "@kon-kh"
-featured: "../../images/QLezSKMJOnw.jpeg"
+featured: "../../images/race-place/13_1624636477_4fmyrk_1920x1200_01e.jpeg"
 ---
 
 [comment]: <> (ГЛАВНАЯ СТРАНИЦА - СОДЕРЖИТ ВСЕ ТЕМЫ И ОТСЫЛАЕТ ЧИТАТЬ ПОДРОБНОСТИ НА ДР. СТРАНИЦЫ)
@@ -132,19 +132,19 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 ## Школа картинга
 
 Возможности и условия обучения в группах, персональные тренировки, летние курсы.
-<a href="/principles" class="more">Читать ≫</a>
+<a href="/demo/race-place-page" class="more">Читать ≫</a>
 
 ## Гонки
 
 Регистрация на гоночные события RacePlace.
-<a href="/principles" class="more">Открыть ≫</a>
+<a href="/demo/race-place-page" class="more">Открыть ≫</a>
 
 ### Услуги
 
-- Праздники под заказ - на высоких скоростях  <a href="/principles" class="more">Ознакомиться ≫</a>
-- Спортивный картинг  <a href="/principles" class="more">Прочитать ≫</a>
-- Выездной картинг  <a href="/principles" class="more">Больше ≫</a>
-- Реклама в RacePlace  <a href="/principles" class="more">Узнать ≫</a>
+- Праздники под заказ - на высоких скоростях  <a href="/demo/race-place-page" class="more">Ознакомиться ≫</a>
+- Спортивный картинг  <a href="/demo/race-place-page" class="more">Прочитать ≫</a>
+- Выездной картинг  <a href="/demo/race-place-page" class="more">Больше ≫</a>
+- Реклама в RacePlace  <a href="/demo/race-place-page" class="more">Узнать ≫</a>
 
 </span>
 
@@ -203,7 +203,7 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 Например, самый популярный формат - стандартный заезд на 10 минут (это 10-20 кругов).
 Цена в будни после 18:00 на взрослый карт составит **800₽**. 
 
-<a href="/principles" class="more">Читать подробнее ≫</a>
+<a href="/demo/race-place-page" class="more">Читать подробнее ≫</a>
 
 ---
 
