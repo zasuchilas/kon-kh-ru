@@ -21,6 +21,10 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 
 <span id="main-article">
 
+[comment]: <> (БЛОК С ГЛАВНОЙ СТАТЬЕЙ, ПЕРВЫЙ ПОДБЛОК)
+
+<span id="main-article-1">
+
 <video autoplay class="video" height="auto" width="100%" loop controls>
 <source src="/race-place.webm" type="video/webm">
 </video>
@@ -32,6 +36,13 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 Картинг - это лучшие эмоции!
 Мы собираемся, чтобы погонять и пообщаться.
 На трассе мы соперники, вне трассы - друзья.
+
+</span>
+
+
+[comment]: <> (БЛОК С ГЛАВНОЙ СТАТЬЕЙ, ПЕРВЫЙ ПОДБЛОК)
+
+<span id="main-article-2">
 
 ### Карты
 
@@ -54,6 +65,8 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 
 </span>
 
+</span>
+
 
 
 
@@ -62,7 +75,10 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 
 <span id="theses">
 
-[comment]: <> (<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1beb05d2b97d76c04d4dd4a462cb2c51028d60ce9199ab7197f5511a1a83fee&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>)
+
+[comment]: <> (БЛОК С ТЕЗИСАМИ, ПЕРВЫЙ ПОДБЛОК)
+
+<span id="theses-1">
 
 ## Трасса в ТРЦ "Июнь"
 
@@ -90,9 +106,18 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 
 <a target="_blank" rel="noopener nofollow" href="https://yandex.ru/profile/223315505074" class="ext-link">г. Химки, 8-й микрорайон, 4. МЕГА Химки</a>
 
----
+</span>
 
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1beb05d2b97d76c04d4dd4a462cb2c51028d60ce9199ab7197f5511a1a83fee&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+
+[comment]: <> (БЛОК С ТЕЗИСАМИб ВТОРОЙ ПОДБЛОК)
+
+<span id="theses-2">
+
+<div id="map-wrapper">
+<iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1beb05d2b97d76c04d4dd4a462cb2c51028d60ce9199ab7197f5511a1a83fee&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+</div>
+
+</span>
 
 </span>
 
@@ -116,10 +141,10 @@ featured: "../../images/QLezSKMJOnw.jpeg"
 
 ### Услуги
 
-- Праздники под заказ - на высоких скоростях <a href="/principles" class="more">Ознакомиться ≫</a>
-- Спортивный картинг <a href="/principles" class="more">Прочитать ≫</a>
-- Выездной картинг <a href="/principles" class="more">Больше ≫</a>
-- Реклама в RacePlace <a href="/principles" class="more">Узнать ≫</a>
+- Праздники под заказ - на высоких скоростях  <a href="/principles" class="more">Ознакомиться ≫</a>
+- Спортивный картинг  <a href="/principles" class="more">Прочитать ≫</a>
+- Выездной картинг  <a href="/principles" class="more">Больше ≫</a>
+- Реклама в RacePlace  <a href="/principles" class="more">Узнать ≫</a>
 
 </span>
 

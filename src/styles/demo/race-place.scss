@@ -43,6 +43,10 @@
   & h3 {
     margin-top: 1.2rem;
   }
+
+  & #map-wrapper {
+    margin-top: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -70,7 +74,15 @@
     }
 
     & #article-4 {
-      border-left: 1px solid var(--border);
+      border-left: 1px dashed var(--border);
+    }
+
+    & #theses {
+      border-right: none;
+    }
+
+    & #main-article {
+      border-right: 1px dashed var(--border);
     }
   }
 }
@@ -79,9 +91,53 @@
   .race-place {
     & .index-page {
       grid-template-areas:
-            "main-article theses"
+            "main-article main-article"
+            "theses theses"
             "article-2 article-3"
             "article-4 article-4";
+
+    }
+
+    & #theses {
+      border-right: none;
+      padding-top: 1rem;
+    }
+
+    & #map-wrapper {
+      margin-top: 0.5rem;
+    }
+
+    & #main-article {
+      border-right: none;
+      padding-top: 0;
+    }
+
+    & #article-4 {
+      border-top: 1px dashed var(--border);
+    }
+
+  }
+}
+
+@media (min-width: 600px) and (max-width: 720px) {
+  .race-place {
+    & .index-page {
+
+      & #main-article {
+        display: block;
+      }
+
+      & #theses {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .race-place {
+    #article-3 {
+      border-bottom: 1px dashed var(--border);
     }
   }
 }

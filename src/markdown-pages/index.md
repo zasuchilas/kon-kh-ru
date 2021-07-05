@@ -18,6 +18,11 @@ featured: "../images/QLezSKMJOnw.jpeg"
 
 <span id="theses">
 
+
+[comment]: <> (БЛОК С ТЕЗИСАМИ, ПЕРВЫЙ БЛОК)
+
+<span id="theses-1">
+
 ### Мир не идеален: получать нужные сведения по-прежнему сложно и неприятно.
 
 Все собирают лендинги из одинаковых блоков, наполняя их сырым текстом.
@@ -33,7 +38,16 @@ featured: "../images/QLezSKMJOnw.jpeg"
 
 Вот почему легкий компактный сайт - это хорошо, и почему лендинги такие "нехорошие".
 
+</span>
+
+
+[comment]: <> (БЛОК С ТЕЗИСАМИ, ВТОРОЙ БЛОК)
+
+<span id="theses-2">
+
 ![Тезисы заключают в себе смыслы](../images/-rkf6Ducli8.jpeg)
+
+</span>
 
 </span>
 
@@ -45,7 +59,18 @@ featured: "../images/QLezSKMJOnw.jpeg"
 
 <span id="main-article">
 
+[comment]: <> (БЛОК С ГЛАВНОЙ СТАТЬЕЙ, ПЕРВЫЙ БЛОК)
+
+<span id="main-article-1">
+
 ![Мы знаем не более/менее того, что смогли прочитать](../images/QLezSKMJOnw.jpeg)
+
+</span>
+
+
+[comment]: <> (БЛОК С ГЛАВНОЙ СТАТЬЕЙ, ВТОРОЙ БЛОК)
+
+<span id="main-article-2">
 
 # Бумажные сайты
 
@@ -61,6 +86,7 @@ featured: "../images/QLezSKMJOnw.jpeg"
 
 </span>
 
+</span>
 
 
 

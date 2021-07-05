@@ -1,6 +1,6 @@
 import { Link, PageProps } from 'gatsby';
 import { MarkdownMetadata, SiteMetadata } from '../../models/seo-models';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 // @ts-ignore
@@ -47,6 +47,24 @@ const RacePlaceTemplate = (props: DemoPageProps) => {
         />
       </Fragment>
     );
+
+  const documentClickHandler = (e: MouseEvent) => {
+    if (e.target instanceof HTMLElement && e.target?.id === 'map-wrapper') {
+      const map = e.target.children[0];
+      if (map instanceof HTMLElement) {
+        const prev = map.style.pointerEvents;
+        const next = prev === 'none' ? 'auto' : 'none';
+        map.style.setProperty('pointer-events', next);
+      }
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', documentClickHandler);
+    return () => {
+      document.removeEventListener('click', documentClickHandler);
+    };
+  }, []);
 
   return (
     <div id="layout" className={layoutClasses}>
