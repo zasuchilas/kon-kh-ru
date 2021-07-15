@@ -3,7 +3,8 @@ module.exports = {
     title: 'Konstantin Khitrov',
     description: 'Бумажные сайты',
     keywords: 'landing, лендинг, site, сайт, создание, разработка, улучшение',
-    url: 'https://kon-kh.ru',
+    url: 'https://kon-kh.ru', // где используется, TODO: поменять на siteUrl
+    siteUrl: 'https://kon-kh.ru', // используется в robot-txt и sitemap
     author: '@kon-kh',
   },
   plugins: [
@@ -78,6 +79,16 @@ module.exports = {
         // Use `defer` attribute of metrika script. If set to `false` - script will be loaded with `async` attribute.
         // Async enables earlier loading of the metrika but it can negatively affect page loading speed. The default value is `false`.
         defer: false,
+      },
+    },
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [
+          { userAgent: '*', allow: '/' },
+          { userAgent: '*', disallow: '/demo/*' },
+        ],
       },
     },
     `gatsby-plugin-catch-links`,
