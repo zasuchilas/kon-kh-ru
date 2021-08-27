@@ -9,3 +9,4 @@ import './src/styles/components/contact-list.scss';
 import './src/styles/pages/index-page.scss';
 import './src/styles/pages/article-page.scss';
 import './src/styles/demo/race-place.scss';
+import './src/styles/demo/vorontsovskie-bani.scss';
