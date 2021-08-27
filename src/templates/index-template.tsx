@@ -1,7 +1,5 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
 import { MarkdownMetadata, SiteMetadata } from '../models/seo-models';
 
 interface IndexPageProps extends PageProps {
@@ -13,13 +11,9 @@ interface IndexPageProps extends PageProps {
 }
 
 const IndexTemplate = (props: IndexPageProps) => {
-  const { html, siteMetadata, markdownMetadata } = props.pageContext;
-  const seoProps = { siteMetadata, ...markdownMetadata };
+  const { html } = props.pageContext;
   return (
-    <Layout>
-      <SEO {...seoProps} />
-      <div className="index-page" dangerouslySetInnerHTML={{ __html: html }} />
-    </Layout>
+    <div className="index-page" dangerouslySetInnerHTML={{ __html: html }} />
   );
 };
 

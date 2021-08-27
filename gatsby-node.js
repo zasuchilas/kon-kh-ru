@@ -19,22 +19,12 @@ exports.createPages = async ({ graphql, actions }) => {
             html
             frontmatter {
               slug
-              demo
               template
               date
               title
               description
               keywords
               author
-              image: featured {
-                childImageSharp {
-                  resize(width: 1200) {
-                    src
-                    height
-                    width
-                  }
-                }
-              }
             }
           }
         }
@@ -53,12 +43,10 @@ exports.createPages = async ({ graphql, actions }) => {
         : null,
     };
 
-    const { demo, slug, template } = markdownMetadata;
+    const { slug, template } = markdownMetadata;
 
     // index | page | blog
-    const component = !demo
-      ? path.resolve(`./src/templates/${template}-template.tsx`)
-      : path.resolve(`./src/templates/demo/${demo}-template.tsx`);
+    const component = path.resolve(`./src/templates/${template}-template.tsx`);
 
     createPage({
       path: slug,

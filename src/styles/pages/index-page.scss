@@ -1,7 +1,7 @@
 .index-page {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0;
+  padding: 1rem;
 
   &>span {
     display: block;
@@ -51,7 +51,7 @@
 @media (min-width: 1200px) {
   .index-page {
     //min-height: 75vh;
-    padding: 1rem 0;
+    padding: 1rem;
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr 1.1fr 0.7fr 0.7fr;
@@ -96,7 +96,7 @@
 @media (min-width: 950px) and (max-width: 1200px) {
   .index-page {
     //min-height: 75vh;
-    padding: 1rem 0;
+    padding: 1rem;
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr 1.1fr 0.7fr;
@@ -145,7 +145,7 @@
 @media (min-width: 600px) and (max-width: 950px) {
   .index-page {
     //min-height: 75vh;
-    padding: 1rem 0;
+    padding: 1rem;
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr 1fr;
